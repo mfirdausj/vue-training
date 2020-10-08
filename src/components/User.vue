@@ -11,6 +11,7 @@
         </tr>
       </thead>
       <tbody>
+         <!--list rendering--> 
         <tr v-for="user in users" v-bind:key="user.id"> 
           <th scope="row">{{user.id}}</th>
           <td>{{user.name}}</td>
@@ -22,6 +23,8 @@
   </div> 
 </template>
 <script>
+
+// send request to endpoint
 import axios from 'axios';
 
   export default {
